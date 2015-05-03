@@ -7,7 +7,7 @@ image:
   feature: random.jpg
 ---
 
-I'm **Grzegorz Parka**, software developer based in Warsaw (Poland) with academic background both in Applied Physics and Computer Science. I took part in Google Summer of Code 2014 where I developed Python library, [pykCSD](http://parkag.github.io/pykcsd-blog/), which is used mainly to analyze local electrical activity of packs of neurons.
+I'm **Grzegorz Parka**, software developer based in Warsaw (Poland) with academic background both in Applied Physics and Computer Science. I took part in Google Summer of Code 2014 where I developed Python library, [pykCSD](http://parkag.github.io/pykcsd-blog/), which is used mainly to analyze local electrical activity of packs of neurons. This year I participate in Google Summer of Code 2015.
 
 For this summer I was chosen by the **Postgres** community to test and refine simulated annealing approach to optimize JOIN order for large queries. This is continuation of work made by Jan Urbański in 2010. During this summer I will work with SAIO - an alternative JOIN order optimizer, a possible replacement for old Genetic Query Optimizer (GEQO). The project is under the supervision of Atri Sharma.
 
