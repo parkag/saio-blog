@@ -2,7 +2,7 @@
 
 title: Postgres - SAIO
 locale: en_US
-description: Blog about verifying and refactoring new JOIN order optimizer for Postgres database
+description: Blog about verifying and improving new JOIN order optimizer for Postgres database
 logo: site-logo.png
 search: true
 #url: http://localhost:4000
@@ -35,7 +35,7 @@ owner:
   name: Grzegorz Parka
   avatar: bio-photo.jpg
   email: grzegorz.parka@gmail.com
-  disqus-shortname: 
+  disqus-shortname: saioblog
   twitter: #username
   facebook: grzegorz.parka
   github: parkag
