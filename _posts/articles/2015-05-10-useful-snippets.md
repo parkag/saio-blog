@@ -14,7 +14,7 @@ share: true
 
 ## How many tables do I have in my schema
 
-```
+```sql
 SELECT count(tablename) FROM pg_tables WHERE schemaname = 'public';
 ```
 
@@ -25,14 +25,14 @@ SELECT count(tablename) FROM pg_tables WHERE schemaname = 'public';
 # Other useful commands
 Finding the conf file
 
-```
+```shell
 sudo updatedb
 locale postgresql.conf
 ```
 
 Example output
 
-```
+```shell
 /etc/postgresql/9.1/main/postgresql.conf
 ```
 

@@ -17,20 +17,20 @@ Setting up Postgres with SAIO or GEQO turned on and off will be repeated multipl
 
 ## Quick install
 
-```
+```shell
 sudo apt-get install postgresql
 sudo apt-get install postgresql-client
 ```
 
 ## From source
 
-```
+```shell
 doh
 ```
 
 ## Adding user
 
-```
+```shell
 sudo su - postgres
 createdb test_db
 psql -s test_db
@@ -38,7 +38,7 @@ psql -s test_db
 
 Now in the psql console:
 
-```
+```sql
 CREATE USER greg PASSWORD 'greg';
 GRANT ALL PRIVILEGES ON DATABASE test_db TO greg;
 ```
@@ -46,7 +46,7 @@ GRANT ALL PRIVILEGES ON DATABASE test_db TO greg;
 
 # Install process on MacOS:
 
-```
+```shell
 doh
 ```
 
