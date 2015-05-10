@@ -17,21 +17,26 @@ Looking for inspiration to create benchmarks I came across an interesting presen
 
 I want my benchmarks to consist of two parts:
 
-## Programatically generated schemas with configurable number of tables, fields and rows.
+## Programatically generated queries
 
-It would be good to use considerably big datasets (in the GB range). Keeping such big sql dumps in a repository is not suitable so they will be generated dynamically with a Python script. 
+I would like to produce test cases running against schemas with configurable number of tables, fields and rows.
+
+It would be good to use considerably big datasets (in the GB range) to test the performance of SAIO/GEQO. Keeping such big sql dumps in a repository is not suitable so the test data will be generated dynamically with a Python script.
 
 Such schemas would not be particularly interesting but would cover many general cases. This is some kind of a parametrized unit test.
 
-## Schemas and queries that can be found in live real systems. 
+## Queries from live systems
+
+The second, more interesting part is to use schemas and queries that can be found in real systems, preferably open source projects.
 
 I'm trying to find different examples of existing systems where large queries can be spotted.
 
 Jan Urbański, who worked on the previous iteration of SAIO, included two examples of such large queries in the SAIO repository with a script to test SAIO and GEQO with diffent parameters on these queries.
 
-It seems that such queries are not so easy to find unless you have them in your own system. And if you do, you probably don't want other people know it.This is because having queries with 10+ join relations may be perceived as a sign of bad design. :P
+It seems that such queries are not so easy to find unless you have them in your own system. And if you do, you probably don't want other people know it.This is because having queries with 10+ join relations may be perceived as a sign of bad design. :)
 
 A few initial guesses about where to look for the queries are:
+
 * Wikimedia set up on Postgres (idea of Jan Urbański)
 * A CRM like SugarCRM or Wordpress (idea of Jan)
 * Accounting program like Gnucash (idea of Jan)
