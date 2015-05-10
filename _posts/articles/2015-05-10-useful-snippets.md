@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Useful code snippets
-excerpt: "Installation procedure"
+excerpt: "semi-random stuff"
 modified: 2015-05-10
 categories: articles
 tags: [sql, postgres ]
@@ -12,30 +12,27 @@ share: true
 ---
 
 
-## How many tables do I have in my schema
+## What tables do I have in my schema
 
-```sql
-SELECT count(tablename) FROM pg_tables WHERE schemaname = 'public';
-```
-
-
+{% highlight sql %}
+SELECT tablename FROM pg_tables WHERE schemaname = 'public';
+{% endhighlight %}
 
 
 
 # Other useful commands
 Finding the conf file
 
-```shell
+{% highlight bash %}
 sudo updatedb
-locale postgresql.conf
-```
+locate postgresql.conf
+{% endhighlight %}
 
 Example output
 
-```shell
-/etc/postgresql/9.1/main/postgresql.conf
-```
-
+{% highlight bash %}
+/etc/postgresql/9.3/main/postgresql.conf
+{% endhighlight %}
 
 <figure>
     <img src="{{ site.url }}/images/gsoc_horizontal.jpg" width="100%">
