@@ -15,6 +15,8 @@ Setting up Postgres with SAIO or GEQO turned on and off will be repeated multipl
 
 # Install process on Ubuntu:
 
+Using fresh Ubuntu 14.04 installed on a virtual machine.
+
 ## Quick install
 
 {% highlight bash %}
@@ -25,8 +27,19 @@ sudo apt-get install postgresql-client
 ## From source
 
 {% highlight bash %}
-doh
+sudo apt-get install git
+sudo apt-get install bison
+sudo apt-get install flex
+sudo apt-get install zlib1g-dev
+git clone https://github.com/postgres/postgres.git
+cd postgres
+./configure
+make
+sudo su
+make install
 {% endhighlight%}
+
+[More on this topic](http://www.postgresql.org/docs/9.4/interactive/installation.html) 
 
 ## Adding user
 
@@ -71,17 +84,28 @@ To disable SAIO:
 SET saio TO 'false';
 {% endhighlight %}
 
+# Setting GUC variables
+{% highlight sql %}
+set saio_algorithm TO recalc; -- move/pivot/recalc
+set saio_equilibrium_factor to 8; 
+set saio_initial_temperature_factor to 2.0;
+set saio_temperature_reduction_factor to 0.8;
+set saio_moves_before_frozen to 2;
+set saio_seed to 0.5;
+
+set join_collapse_limit to 100;
+set from_collapse_limit to 100;
+{% endhighlight %}
+
 # Install process on Mac OS:
 
 {% highlight bash %}
-doh
+NOT AVAILABLE YET
 {% endhighlight%}
-
-TODO
 
 # Install process on Windows:
 
-TODO
+NOT AVAILABLE YET
 
 <figure>
     <img src="{{ site.url }}/images/gsoc_horizontal.jpg" width="100%">
