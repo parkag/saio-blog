@@ -130,7 +130,7 @@ They can be run via the Makefile
 make install
 make installcheck
 {% endhighlight %}
-I saw that the tests are failling on [PGXN tester](http://www.fuzzy.cz/tmp/pgxn-tester/#). However didn't manage to run them locally yet for some reason.
+I saw that the tests are failling on [PGXN tester](http://www.fuzzy.cz/tmp/pgxn-tester/#). However didn't manage to run them locally yet.
 
 
 ##scripts
@@ -183,10 +183,12 @@ I don't yet understand the *join_can_be_legal()* function.
 //TODO
 
 ###saio_recalc.c
-//TODO
+Implements the best performing algorithm for calculating SAIO moves.
+
+It is the only algorithm which that Jan kept in the repo.
 
 ###saio_probes.h
-Defines tracing procedures. (For debugging purposes?)
+Defines tracing procedures - for debugging purposes.
 //TODO
 
 ###saio_probes.d
@@ -212,7 +214,9 @@ I don't agree with the author that the code is particularly ugly. It can be made
 The module surely can be tested more extensively. Small updates may be useful 
 to conform better to the PGXN layout or the /contrib layout.
 
-//TODO find the bad parts, compare with some newer contrib modules
+There is one a bit annoying inconsistency - SQL scripts in the repo are not in sync with the C code. For example the SQL scripts set saio_algorithm GUC variable which was removed from the code.
+
+//TODO find more bad parts, compare with some newer contrib modules
 
 <figure>
     <img src="{{ site.url }}/images/gsoc_horizontal.jpg" width="100%">

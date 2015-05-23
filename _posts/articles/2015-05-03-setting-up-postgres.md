@@ -81,12 +81,11 @@ LOAD 'saio';
 
 To disable SAIO:
 {% highlight sql %}
-SET saio TO 'false';
+SET saio TO false;
 {% endhighlight %}
 
 # Setting GUC variables
 {% highlight sql %}
-set saio_algorithm TO recalc; -- move/pivot/recalc
 set saio_equilibrium_factor to 8; 
 set saio_initial_temperature_factor to 2.0;
 set saio_temperature_reduction_factor to 0.8;

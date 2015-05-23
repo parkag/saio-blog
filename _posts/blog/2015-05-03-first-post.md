@@ -11,7 +11,7 @@ comments: true
 share: true
 ---
 
-This year my [proposal]({{ site.url }}/assets/files/SAIO-gsoc-proposal.pdf) has been accepted into prestigious global program Google Summer of Code 2015. 
+This year my [proposal]({{ site.url }}/assets/files/SAIO-gsoc-proposal.pdf) was accepted into prestigious global program Google Summer of Code 2015. 
 
 During the summer I will be working on refining the existing experimental simulated annealing approach to optimize join orders for large queries in Postgres database.
 
